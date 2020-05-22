@@ -1,0 +1,8 @@
+# install java
+
+- src: geerlingguy.java
+
+# install jenkins
+
+- src: geerlingguy.jenkins
+
