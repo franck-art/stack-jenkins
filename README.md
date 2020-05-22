@@ -1,7 +1,8 @@
 ############## Playbook d'installation de jenkins via un playbook Ansible ######
-
 # Prerequis: Installer Ansible ou utliser la stack ansible
+
 Dans mon cas, j'utilise la stack ansible
+
 1-charger la Stack Ansible grace au service Cloud formation de AWS 
 
 2- se connecter via Mobaxterm
