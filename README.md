@@ -1,16 +1,16 @@
-############## Playbook d'installation de jenkins via un playbook Ansible ######
-# Prerequis: Installer Ansible ou utliser la stack ansible
+############## Jenkins installation playbook using an Ansible playbook ######
+# Prerequisites: Install Ansible or use the ansible stack
 
-NB: Si vous avez ansible installé et que vous etes directement connecté sur votre machine, passez à l'étape (Installer Jenkins).
+NB: If you have ansible installed and you are directly connected to your machine, go to step (Install Jenkins).
 
-Dans mon cas, j'utilise la stack ansible
+In my case, I use the ansible stack
 
-1-charger la Stack Ansible grace au service Cloud formation de AWS 
+1-load the Ansible Stack thanks to AWS Cloud training service 
 
-2- se connecter via Mobaxterm ou putty (pour une connexion à distance)
+2- connect via Mobaxterm or putty (for a remote connection)
 
 
-# Installer Jenkins
+# Install Jenkins
 
 1- git clone https://github.com/franck-art/install-jenkins_via_ansible.git
 
@@ -20,6 +20,4 @@ Dans mon cas, j'utilise la stack ansible
 
 4- ansible-playbook install_jenkins.yml 
 
-5- Ouvrir le port 8080 (via le security-goup sur AWS)
-
-6- se connecter sur un navigateur: http://@ip:8080/
+5- se connecter sur un navigateur: http://@ip:80/
