@@ -14,3 +14,7 @@
 3- ansible-galaxy role install -r requirements.yml
 
 4- ansible-playbook install_jenkins.yml 
+
+5- Ouvrir le port 8080 (via le security-goup sur AWS)
+
+6- se connecter sur un navigateur: http://@ip:8080/
