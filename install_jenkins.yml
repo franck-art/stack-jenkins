@@ -5,7 +5,7 @@
   vars:
     jenkins_hostname: localhost
     java_packages:
-      - java-1.8.0-openjdk
+      - java-1.8.0-openjdk-devel
     
     pip_install_packages:
       - name: docker
@@ -45,6 +45,13 @@
     args:
       warn: no
 
+  roles:
+    - role: geerlingguy.pip
+    - role: geerlingguy.docker
+    - role: geerlingguy.java
+
+  tasks:
+
   - name: install jenkins
     yum:
       name: jenkins
@@ -60,8 +67,4 @@
       name: jenkins
       enabled: yes
 
-  roles:
-    - role: geerlingguy.pip
-    - role: geerlingguy.docker
-    - role: geerlingguy.java
-    
+     
