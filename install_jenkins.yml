@@ -17,6 +17,7 @@
       update_only: yes
       update_cache: yes
       state: latest
+
   - name: install  nano  
     yum:
       name: nano
@@ -32,13 +33,13 @@
       name: epel-release
       state: installed
 
-  # Disabling warnings
-  - name: Using curl to connect to a host via SOCKS proxy (unsupported in uri). Ordinarily this would throw a warning.
+  
+  - name: Using curl to install jenkins repo
     shell: curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
     args:
       warn: no
 
-  - name: install the nginx rpm from a remote repo
+  - name: install jenkins packages
     
     shell: rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key 
     args:
@@ -49,12 +50,12 @@
       name: jenkins
       state: installed
 
-  - name: Restart service httpd, in all cases
+  - name: Restart service jenkins, in all cases
     service:
       name: jenkins
       state: restarted
 
-  - name: Enable service httpd, and not touch the state
+  - name: Enable service jenkins, and not touch the state
     service:
       name: jenkins
       enabled: yes
