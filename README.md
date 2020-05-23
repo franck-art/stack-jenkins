@@ -20,4 +20,4 @@ In my case, I use the ansible stack
 
 4- ansible-playbook install_jenkins.yml 
 
-5- se connecter sur un navigateur: http://@ip:80/
+5- se connecter sur un navigateur: http://@ip:8080/
