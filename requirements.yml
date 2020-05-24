@@ -4,7 +4,7 @@
 
 # install jenkins
 
-#- src: geerlingguy.jenkins
+- src: geerlingguy.jenkins
 
 # install pip
 
