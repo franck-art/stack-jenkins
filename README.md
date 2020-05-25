@@ -6,9 +6,9 @@ Installation of jenkins with a AWS Stack or with a jenkins playbook
 
 2- Installation with jenkins playbook
 
-- git clone https://github.com/franck-art/install-jenkins_via_ansible.git
+- git clone https://github.com/franck-art/stack-jenkins.git
 
-- cd install-jenkins_via_ansible
+- cd stack-jenkins
 
 - ansible-galaxy role install -r requirements.yml
 
