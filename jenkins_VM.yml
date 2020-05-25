@@ -61,9 +61,9 @@ Resources:
             yum -y install git
 
             # run the jenkins playbook
-            git clone https://github.com/diranetafen/cursus-devops.git
-            cd cursus-devops/ansible 
-            ansible-galaxy role install -r roles/requirements.yml
+            git clone  https://github.com/franck-art/stack-jenkins.git
+            cd stack-jenkins/
+            ansible-galaxy role install -r requirements.yml
             ansible-playbook install_jenkins.yml
            
             # add the user centos in the docker group
