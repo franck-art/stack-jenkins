@@ -1,15 +1,12 @@
-# install java
+# Install a role for pip 
+- src: geerlingguy.pip 
 
+# Install a role for docker 
+- src: geerlingguy.docker 
+
+# install java
 - src: geerlingguy.java
 
 # install jenkins
-
 - src: geerlingguy.jenkins
 
-# install pip
-
-- src: geerlingguy.pip
-
-# install docker
-
-- src: geerlingguy.docker

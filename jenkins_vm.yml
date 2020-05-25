@@ -69,8 +69,9 @@ Resources:
             # add the user centos in the docker group
             sudo usermod -aG docker centos
 
-            # permission to execute docker commands with the socket
-            sudo chmod 777 /var/run/docker.sock
+            # add jenkins user to the docker group and restart the service
+            sudo usermod -aG docker jenkins
+            sudo systemctl restart jenkins
             
             # Enable and start docker
             sudo systemctl enable docker
