@@ -1,4 +1,4 @@
-Installation of jenkins with a AWS Stack or with a jenkins playbook
+Installation of jenkins with a AWS Stack or jenkins playbook
 
 1- Installation with Stack
 - Load the jenkins_VM.yml  stack using the AWS training cloud service
