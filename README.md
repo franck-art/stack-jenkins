@@ -4,7 +4,7 @@ Installation of jenkins with a AWS Stack or jenkins playbook
 - Load the jenkins_VM.yml  stack using the AWS training cloud service
 - connect to a browser: http://@ip:8080/
 
-- connect to jenkins-dashboard: username= admin password= admin
+- connect to jenkins-dashboard: username= admin , password= admin
 
 2- Installation with jenkins playbook
 
@@ -18,4 +18,4 @@ Installation of jenkins with a AWS Stack or jenkins playbook
 
 - connect to a browser: http://@ip:8080/
 
-- connect to jenkins-dashboard: username= admin password= admin
+- connect to jenkins-dashboard: username= admin , password= admin
